@@ -24,13 +24,10 @@ curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
 git clone https://github.com/edwardwohaijun/image-editor
 cd image-editor
 wasm-pack build
-cd www
-npm install
-cd ../pkg
-npm link
-cd ../www
-npm link image-editor
-npm run start
+(cd www; npm install)
+(cd pkg; npm link)
+(cd www; npm link image-editor)
+(cd www; npm run start)
 ```
 open Chrome and go to `http://localhost:8080/image-editor`
 
