@@ -7,6 +7,7 @@ import 'babel-polyfill';
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import Main from './components/Main';
+import BoundingBoxDrawer from './components/BBoxTest/BoundingBoxDrawer';
 import reducers from './reducers';
 import './style.css';
 
@@ -52,5 +53,6 @@ class App extends Component {
 ReactDOM.render(
     <Provider store={store}>
       <App />
+      {/* <BoundingBoxDrawer /> */}
     </Provider>, document.getElementById('main')
 );

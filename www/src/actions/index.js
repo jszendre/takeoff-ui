@@ -1,5 +1,5 @@
 import {SET_ZOOM_RATIO, SET_WIDTH_HEIGHT, SHOW_CROP_HANDLERS, SHOW_PIXELATE_HANDLERS, SET_PIXELATE_HANDLERS_POSITION,
-  SHOW_MINI_HANDLERS, SET_MINI_HANDLERS_HEIGHTS} from '../constants/actions';
+  SHOW_MINI_HANDLERS, SET_MINI_HANDLERS_HEIGHTS, SHOW_BASIC_TEXT_HANDLERS, SHOW_BORDER_TEXT_HANDLERS} from '../constants/actions';
 
 export function setZoomRatio(zoomRatio){
   return {
@@ -26,6 +26,20 @@ export function showCropHandlers(show) {
 export function showPixelateHandlers(visible) {
   return {
     type: SHOW_PIXELATE_HANDLERS,
+    visible
+  }
+}
+
+export function showBasicTextHandlers(visible) {
+  return {
+    type: SHOW_BASIC_TEXT_HANDLERS,
+    visible
+  }
+}
+
+export function showBorderTextHandlers(visible) {
+  return {
+    type: SHOW_BORDER_TEXT_HANDLERS,
     visible
   }
 }
