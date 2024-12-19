@@ -138,6 +138,7 @@ class Main extends Component {
     // at the end of this fn, there is a resizeCanvas() call, which will set canvasWidth/Height, which will make the canvas black.
     // In other word, setting canvasWidth/Height must be followed by drawImage(),
     // so I have to schedule the drawImage() to run after resizeCanvas() by using dirty, hacky setTimeout.
+    // let canvas_img = document.getElementById('canvas-image');
     let canvas = document.getElementById('canvas');
     setTimeout(() => canvas.getContext('2d').drawImage(img, 0, 0), 0);
 

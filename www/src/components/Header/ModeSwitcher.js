@@ -8,7 +8,8 @@ class ModeSwitcher extends Component {
 
   render() {
     return (
-        <div>image editor</div>
+        <div></div>
+        // <div>image editor</div>
     )}
 }
 
